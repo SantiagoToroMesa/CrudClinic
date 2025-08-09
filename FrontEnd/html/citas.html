@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Agendar Cita - Hospital salud plena</title>
+    <link rel="stylesheet" href="../Css/citas.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/2966/2966327.png"
+          alt="Logo Clínica"
+        />
+        <h1>Hospital salud plena</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="Principal.html">Inicio</a></li>
+          <li><a href="citas.html" class="active">Citas</a></li>
+          <li><a href="listar.html">ver citas</a></li>
+          <li><a href="#">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="form-section">
+        <h2>Agendar una Cita Médica</h2>
+        <p>
+          Complete el siguiente formulario para reservar su cita con uno de
+          nuestros especialistas.
+        </p>
+
+        <form action="#" method="POST" class="form-cita">
+          <label for="nombre">Nombre Completo:</label>
+          <input
+            type="text"
+            id="nombre"
+            name="nombre"
+            placeholder="Ingrese su nombre"
+            required
+          />
+
+          <label for="correo">Correo Electrónico:</label>
+          <input
+            type="email"
+            id="correo"
+            name="correo"
+            placeholder="ejemplo@correo.com"
+            required
+          />
+
+          <label for="telefono">Teléfono:</label>
+          <input
+            type="tel"
+            id="telefono"
+            name="telefono"
+            placeholder="300 123 4567"
+            required
+          />
+
+          <label for="fecha">Fecha de la Cita:</label>
+          <input type="date" id="fecha" name="fecha" required />
+
+          <label for="hora">Hora de la Cita:</label>
+          <input type="time" id="hora" name="hora" required />
+
+          <label for="especialidad">Especialidad Médica:</label>
+          <select id="especialidad" name="especialidad" required>
+            <option value="">Seleccione...</option>
+            <option value="medicina-general">Medicina General</option>
+            <option value="pediatria">Pediatría</option>
+            <option value="cardiologia">Cardiología</option>
+            <option value="dermatologia">Dermatología</option>
+          </select>
+
+          <label for="motivo">Motivo de la Consulta:</label>
+          <textarea
+            id="motivo"
+            name="motivo"
+            rows="4"
+            placeholder="Describa brevemente el motivo de su cita"
+          ></textarea>
+
+          <button type="submit">Agendar Cita</button>
+        </form>
+      </section>
+    </main>
+
+       <footer>
+      <p>📍 Calle Salud #123, Ciudad Bienestar | 📞 +57 300 123 4567</p>
+      <p>&copy; 2025 Hospital Salud Plena. Todos los derechos reservados.</p>
+    </footer>
+  </body>
+</html>

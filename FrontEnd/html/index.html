@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login y Registro</title>
+    <link rel="stylesheet" href="../Css/styles.css" />
+  </head>
+  <body>
+    <div class="container" id="container">
+      <div class="form-container sign-in-container">
+        <form action="#">
+          <h2>Iniciar Sesión</h2>
+          <div class="social-networks"></div>
+          <span>Use su correo y contraseña</span>
+          <input type="email" placeholder="Email" required />
+          <input type="password" placeholder="Password" required />
+          <a href="#">¿Olvidaste tu contraseña?</a>
+          <button>Iniciar Sesión</button>
+        </form>
+      </div>
+
+      <div class="form-container sign-up-container">
+        <form action="#">
+          <h2>Crear Cuenta</h2>
+          <div class="social-networks"></div>
+          <span>Use su correo electrónico para registrarse</span>
+          <input type="text" placeholder="Nombre" required />
+          <input type="email" placeholder="Email" required />
+          <input type="password" placeholder="Password" required />
+          <button>Registrarse</button>
+        </form>
+      </div>
+
+      <div class="overlay-container">
+        <div class="overlay">
+          <div class="overlay-panel overlay-left">
+            <h2>¡Bienvenido de vuelta!</h2>
+            <p>
+              Para mantenerse conectado con nosotros, inicie sesión con su
+              información personal
+            </p>
+            <button class="ghost" id="signIn">Iniciar Sesión</button>
+          </div>
+          <div class="overlay-panel overlay-right">
+            <h2>¡Bienvenido!</h2>
+            <p>
+              Ingrese sus datos personales para usar todas las funciones del
+              sitio
+            </p>
+            <button class="ghost" id="signUp">Registrarse</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script src="../Js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Lista de Citas - Hospital Sanar</title>
+  <link rel="stylesheet" href="../Css/listar.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="https://cdn-icons-png.flaticon.com/512/2966/2966485.png" alt="logo" />
+      <h1>Hospital salud plena</h1>
+    </div>
+    <nav>
+      <a href="Principal.html">Inicio</a>
+      <a href="citas.html">Agendar Cita</a>
+      <a class="activo" href="lista_citas.html">Ver Citas</a>
+    </nav>
+  </header>
+
+  <main class="contenedor">
+    <section class="titulo">
+      <h2>Listado de Citas</h2>
+      <p>Busca y filtra las citas. Puedes combinar varios filtros.</p>
+    </section>
+
+    <!-- BARRA DE BÚSQUEDA / FILTROS -->
+    <section class="filtros">
+      <input id="qPaciente" type="text" placeholder="Paciente (nombre o email)" />
+      <input id="qDoctor" type="text" placeholder="Médico (nombre)" />
+      <select id="qEspecialidad">
+        <option value="">Especialidad (todas)</option>
+        <option value="Pediatría">Pediatría</option>
+        <option value="Cardiología">Cardiología</option>
+        <option value="Dermatología">Dermatología</option>
+        <option value="Medicina General">Medicina General</option>
+      </select>
+      <select id="qStatus">
+        <option value="">Estado (todos)</option>
+        <option value="Pendiente">Pendiente</option>
+        <option value="Reprogramada">Reprogramada</option>
+        <option value="Cancelada">Cancelada</option>
+        <option value="Confirmada">Confirmada</option>
+      </select>
+      <label>Desde <input id="qFrom" type="date" /></label>
+      <label>Hasta <input id="qTo" type="date" /></label>
+
+      <button id="btnBuscar" class="btn-primario">Buscar</button>
+      <button id="btnLimpiar" class="btn-secundario">Limpiar</button>
+    </section>
+
+    <!-- TABLA DE RESULTADOS -->
+    <section class="tabla-citas">
+      <table id="tablaCitas">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Paciente</th>
+            <th>Doctor</th>
+            <th>Especialidad</th>
+            <th>Fecha</th>
+            <th>Hora</th>
+            <th>Método Pago</th>
+            <th>Estado</th>
+            <th>Acciones</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+
+      <div class="paginacion">
+        <button id="prevPage">Anterior</button>
+        <span id="pageInfo">Página 1</span>
+        <button id="nextPage">Siguiente</button>
+      </div>
+    </section>
+  </main>
+
+<footer>
+      <p>📍 Calle Salud #123, Ciudad Bienestar | 📞 +57 300 123 4567</p>
+      <p>&copy; 2025 Hospital Salud Plena. Todos los derechos reservados.</p>
+    </footer>
+
+  <script src="lista_citas.js"></script>
+</body>
+</html>

@@ -1,0 +1,156 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: Segoe UI, Roboto, Arial, sans-serif;
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("./img/abstracto-borroso-fondo-pasillo-interior-hospital-efecto-desfocado_441990-15551.webp");
+
+  background-size: cover;
+  background-position: center;
+  color: #123;
+}
+header {
+  background-color: #1c8c8c;
+  color: #fff;
+  padding: 12px 28px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+header img {
+  width: 44px;
+  height: 44px;
+}
+header nav a {
+  color: #e6f1ff;
+  text-decoration: none;
+  margin-left: 18px;
+  font-weight: 600;
+}
+header nav a.activo {
+  background: rgba(255, 255, 255, 0.12);
+  padding: 6px 10px;
+  border-radius: 6px;
+}
+
+.contenedor {
+  max-width: 1100px;
+  margin: 26px auto;
+  padding: 0 18px;
+}
+.titulo {
+  text-align: center;
+  margin-bottom: 18px;
+}
+.filtros {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 18px;
+}
+.filtros input,
+.filtros select {
+  padding: 8px 10px;
+  border-radius: 8px;
+  border: 1px solid #c7d7ef;
+  min-width: 160px;
+}
+.filtros label {
+  color: #123;
+  font-size: 0.95rem;
+}
+
+.btn-primario {
+  background: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.btn-secundario {
+  background: #f1f5fb;
+  color: #123;
+  border: 1px solid #c7d7ef;
+  padding: 10px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.tabla-citas table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(15, 40, 80, 0.08);
+}
+.tabla-citas th {
+  background: linear-gradient(90deg, #0066cc, #0d6efd);
+  color: #fff;
+  padding: 14px;
+  text-align: left;
+}
+.tabla-citas td {
+  padding: 12px;
+  border-bottom: 1px solid #f1f5fb;
+}
+
+.tabla-citas tbody tr:hover {
+  background: #f6fbff;
+}
+
+.paginacion {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  padding: 12px 0;
+  margin-top: 10px;
+}
+.paginacion button {
+  padding: 8px 10px;
+  border-radius: 6px;
+  border: 1px solid #c7d7ef;
+  background: #fff;
+  cursor: pointer;
+}
+
+.accion-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 10px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  margin-right: 6px;
+}
+.editar {
+  background: #28a745;
+  color: #fff;
+}
+.eliminar {
+  background: #dc3545;
+  color: #fff;
+}
+
+footer {
+  background-color: #1c8c8c;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 124px;
+}
